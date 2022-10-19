@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas membuat web</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="home.html">MyBlog</a>
+            </h1>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">Biodata</a></li>
+                <li class="aktif"><a href="contact.html">ContactMe</a></li>
+            </ul>
+        </div>
+    </header>
+
+	<div class="sosmed">
+		<a class="tombol" href="https://www.facebook.com/profile.php?id=100010192842622">
+            <i class="fab fa-facebook-f" ></i>
+        </a>
+        <a class="tombol" href="http:www.instagram.com/hafifauliah">
+            <i class="fab fa-instagram" ></i>
+        </a> 
+        <a class="tombol" href="https://api.whatsapp.com/send?phone=6285280011116&text=lestbefriendss">
+            <i class="fab fa-whatsapp" ></i>
+        </a>
+        <br>
+        <center><div class="kotak">
+            <form action="" method="post">
+                <div class="formm">
+                    <label for="">Full Name</label>
+                    <input type="text">
+                </div>
+                <div class="formm">
+                    <label for="">Alamat Email</label>
+                    <input type="email">
+                </div>
+                <div class="formm">
+                    <label for="">Pesan</label>
+                    <textarea name="" id="" rows="5" placeholder="Masukkan Pesan untukku..."></textarea>
+                </div>
+
+                <div class="formm">
+                    <button type="submit" onclick="berhasil()" class="kirim">Kirim</button>
+                </div>
+            </form>
+            <script>
+                var berhasil = () => alert ("Pesan berhasil di kirimkan")
+            </script>
+        </div></center>
+    </div>
+</body>
+</html>

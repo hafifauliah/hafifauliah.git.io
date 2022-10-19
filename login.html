@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas membuat web</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<style>
+    form{
+        border: solid 1px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                <a href="home.html">MyBlog</a>
+            </h1>
+            <ul>
+                <li class="aktif"><a href="login.html">login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="login">
+        <form action="" method="post" id="submit">
+            <h2>login</h2>
+            <div class="form2">
+                <label for="Username">Username</label>
+                <input type="text"  name="Username" id="Username">
+            </div>
+
+            <div class="form2">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password">
+            </div>
+            <br>
+
+            <div class="form2">
+                <button onclick="checkForm()" class="Masuk">Masuk</button>
+            </div>
+        </form>
+    </div>
+    <script  language="JavaScript">
+        function checkForm(){
+            var Username= document.getElementById("Username").value;
+            var Password = document.getElementById("Password").value;
+
+            if (Username == "Hafifa" && Password == "qwertyu") {
+                window.open("Dashboard.html");
+            } 
+            else {
+             alert("Password dan Username anda salah");   
+            }
+        }
+    </script>
+</body>
+</html>
